@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nuevo Mov</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Concepto:</ion-label>
+      <ion-input placeholder="Descripción" [(ngModel)]="concepto"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>$</ion-label>
+      <ion-input type="number" placeholder="000" [(ngModel)]="nuevoImporte"></ion-input>
+    </ion-item>
+    </ion-list>
+  <ion-button expand="block" (click)="agregar();" >Guardar</ion-button>
+</ion-content>
